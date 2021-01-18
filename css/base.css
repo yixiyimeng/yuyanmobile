@@ -1,0 +1,22 @@
+.header{
+	position: fixed;
+	height: .95rem;
+	left: 0;
+	right: 0;
+	top: 0;
+	color: #222;
+	font-size: .34rem;
+	text-align: center;
+	position: relative;
+	line-height: .95rem;
+}
+.header .reback{
+	position: absolute;
+	height: .3rem;
+	width: .78rem;
+	background: url(../img/arrow.png) no-repeat center center;
+	background-size: .18rem auto;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}

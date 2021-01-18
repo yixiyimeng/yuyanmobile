@@ -1,0 +1,174 @@
+html {
+	/*如果有溢出自动形成滚动条*/
+	overflow-y: auto;
+	/*不想让iPhone横坚屏切换的时候调节文字*/
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-size: 13.3333vw;
+	
+}
+* { -webkit-tap-highlight-color: transparent; outline: 0; margin: 0; padding: 0; vertical-align: baseline; }
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin: 0; padding: 0; vertical-align: baseline; }
+img { border: 0 none; vertical-align: top; }
+i, em { font-style: normal; }
+ol, ul { list-style: none; }
+input, select, button, h1, h2, h3, h4, h5, h6 { font-size: 100%; font-family: inherit; }
+table { border-collapse: collapse; border-spacing: 0; }
+a { text-decoration: none; color: #666; }
+body { margin: 0 auto; min-width: 320px; max-width: 640px; height: 100%; font-size: 14px; font-family: -apple-system,Helvetica,sans-serif; line-height: 1.5; color: #666; -webkit-text-size-adjust: 100% !important; text-size-adjust: 100% !important; }
+input[type="text"], textarea { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	-webkit-appearance: button;
+	/*渲染成button的风格*/
+	text-transform: none;
+	outline: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #d3c7ce;
+	/*输入框提示语的字体样式*/
+}
+
+input::-webkit-inner-spin-button {
+	/*解决input的type="number"在部分手机端会出现一个小按钮*/
+	-webkit-appearance: none;
+	/*去除系统默认appearance的样式,常用于IOS下移除原生样式*/
+}
+
+input::-webkit-outer-spin-button {
+	/*解决input的type="number"在部分手机端会出现一个小按钮*/
+	-webkit-appearance: none;
+}
+/* 去掉focus 灰色背景 */
+input,textarea,input:focus, textarea:focus{ outline: none; -webkit-tap-highlight-color: transparent; -webkit-user-modify: read-write-plaintext-only; }
+button,
+input[type=button],
+input[type=checkbox],
+input[type=reset],
+input[type=submit],
+label {
+	cursor: pointer;
+	user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+
+
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+input[type='search'] {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-appearance: textfield;
+}
+ body textarea{
+	font-family: -apple-system,Helvetica,sans-serif;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	/*所有元素以border开始计算盒子大小*/
+}
+.flex {
+	display: -webkit-box !important;
+	display: -webkit-flex !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+}
+
+
+/*垂直显示*/
+
+.flex-v {
+	-webkit-box-orient: vertical;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.flex-1 {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	/* overflow: hidden */
+}
+
+
+/*垂直对其方式*/
+
+.flex-align-center {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.flex-align-end {
+	-webkit-box-align: flex-end;
+	-webkit-align-items: flex-end;
+	-ms-flex-align: flex-end;
+	align-items: flex-end
+}
+
+/*左右居中*/
+
+.flex-pack-center {
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+
+/*两端对齐*/
+
+.flex-pack-justify {
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.flex-wrap{
+	flex-wrap: wrap;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.clearfix {
+	zoom: 1;
+}
+html, body{
+	height: 100%;
+	width: 100%;
+}
+.ellipsis{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.muiellipsis{
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}

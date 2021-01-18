@@ -1,0 +1,109 @@
+.loginbox {
+	padding-top: 1.3rem;
+}
+
+.loginbox .title {
+	color: #222;
+	font-size: .54rem;
+	text-align: center;
+	margin-bottom: .9rem;
+}
+
+.tab .tab-link {
+	border-bottom: 1px solid #e6e6e6;
+	padding: 0 .3rem;
+}
+
+.tab .tab-link a {
+	text-align: center;
+	height: 1rem;
+	line-height: 1rem;
+	background: #fafafa;
+	border-radius: .1rem .1rem 0 0;
+	color: #ccc;
+	font-size: .46rem;
+}
+
+.tab .tab-link a.active {
+	border: 1px solid #e6e6e6;
+	border-bottom: none;
+	background: #fff;
+	color: #333;
+	position: relative;
+}
+
+.tab .tab-link a.active::before {
+	content: '';
+	display: block;
+	height: 1px;
+	left: 0;
+	right: 0;
+	background: #fff;
+	position: absolute;
+	bottom: -1px;
+}
+
+.tab .tab-panel {
+	margin: .7rem .3rem;
+	padding-bottom: .1rem;
+}
+
+.tab .tab-panel .group {
+	padding:0 .26rem;
+	height: 1.2rem;
+	border-bottom: 1px solid #e6e6e6;
+	font-size: .3rem;
+}
+
+.tab .tab-panel .group i {
+	width: .3rem;
+	height: .35rem;
+	background: url(../img/mobile.png) no-repeat center center;
+	background-size: auto 100%;
+	margin-right: .4rem;
+}
+
+.tab .tab-panel .group i.icon-pwd {
+	background-image: url(../img/pwd.png);
+}
+
+.tab .tab-panel .group input {
+	border: none;
+}
+
+.tab .tab-panel .forgetpwd {
+	text-align: right;
+	margin: .4rem 0 .5rem;
+}
+
+.tab .tab-panel .forgetpwd a {
+	color: #999;
+	font-size: .24rem;
+}
+
+.tab .tab-panel .submitBtn {
+	color: #fff;
+	font-size: .4rem;
+	background: #1877b9;
+	border-radius: .1rem;
+	display: block;
+	border: none;
+	width: 100%;
+	line-height: 1rem;
+}
+
+.tab .tab-panel .changeWay {
+	text-align: center;
+	margin: .4rem auto;
+	display: block;
+	color: #999;
+	font-size: .3rem;
+}
+.tab .tab-panel  .getcode{
+	color: #e02627;
+	font-size: .24rem;
+	border: 1px solid #e02627;
+	border-radius: 1rem;
+	line-height: .54rem;
+	padding: 0 .15rem;
+}
