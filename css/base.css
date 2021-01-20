@@ -1,4 +1,4 @@
-.header{
+.rebackheader {
 	position: fixed;
 	height: .95rem;
 	left: 0;
@@ -10,7 +10,8 @@
 	position: relative;
 	line-height: .95rem;
 }
-.header .reback{
+
+.rebackheader .reback {
 	position: absolute;
 	height: .3rem;
 	width: .78rem;
@@ -19,4 +20,38 @@
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: .94rem;
+	background: #fff;
+	padding: 0 .3rem;
+	font-size: .28rem;
+}
+
+.header a {
+	color: #0266af;
+}
+
+.header a.menu {
+	height: .94rem;
+	width: .36rem;
+	background: url(../img/menu.png) no-repeat center center;
+	background-size: .36rem auto;
+	display: block;
+	margin-left: .9rem;
+}
+
+.header .logo,
+.header .logo img {
+	display: block;
+	width: 2rem;
+}
+
+.header+div {
+	padding-top: .94rem;
 }

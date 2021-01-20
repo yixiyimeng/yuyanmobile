@@ -48,14 +48,32 @@
 	padding-bottom: .1rem;
 }
 
-.tab .tab-panel .group {
-	padding:0 .26rem;
+
+.tab .tab-panel .changeWay {
+	text-align: center;
+	margin: .4rem auto;
+	display: block;
+	color: #999;
+	font-size: .3rem;
+}
+
+.input-form .getcode {
+	color: #e02627;
+	font-size: .24rem;
+	border: 1px solid #e02627;
+	border-radius: 1rem;
+	line-height: .54rem;
+	padding: 0 .15rem;
+}
+
+.input-form .group {
+	padding: 0 .26rem;
 	height: 1.2rem;
 	border-bottom: 1px solid #e6e6e6;
 	font-size: .3rem;
 }
 
-.tab .tab-panel .group i {
+.input-form .group i {
 	width: .3rem;
 	height: .35rem;
 	background: url(../img/mobile.png) no-repeat center center;
@@ -63,25 +81,29 @@
 	margin-right: .4rem;
 }
 
-.tab .tab-panel .group i.icon-pwd {
+.input-form .group i.icon-pwd {
 	background-image: url(../img/pwd.png);
 }
 
-.tab .tab-panel .group input {
+.input-form .group i.icon-pwd2 {
+	background-image: url(../img/pwd2.png);
+}
+
+.input-form .group input {
 	border: none;
 }
 
-.tab .tab-panel .forgetpwd {
+.input-form .forgetpwd {
 	text-align: right;
 	margin: .4rem 0 .5rem;
 }
 
-.tab .tab-panel .forgetpwd a {
+.input-form .forgetpwd a {
 	color: #999;
 	font-size: .24rem;
 }
 
-.tab .tab-panel .submitBtn {
+.input-form .submitBtn {
 	color: #fff;
 	font-size: .4rem;
 	background: #1877b9;
@@ -92,18 +114,42 @@
 	line-height: 1rem;
 }
 
-.tab .tab-panel .changeWay {
+.successInfo {
 	text-align: center;
-	margin: .4rem auto;
+	padding-top: 1.7rem;
+}
+
+.successInfo img {
 	display: block;
+	width: 2rem;
+	margin: 0 auto;
+}
+
+.successInfo .tip {
+	color: #1877b9;
+	font-size: .4rem;
+	font-weight: bold;
+	margin: .7rem 0 .35rem;
+}
+
+.successInfo .tip+div {
 	color: #999;
 	font-size: .3rem;
 }
-.tab .tab-panel  .getcode{
-	color: #e02627;
-	font-size: .24rem;
-	border: 1px solid #e02627;
-	border-radius: 1rem;
-	line-height: .54rem;
-	padding: 0 .15rem;
+
+.successInfo .reback {
+	color: #1877b9;
+	font-size: .4rem;
+	display: block;
+	width: 6.1rem;
+	height: 1rem;
+	border: 1px solid #1877b9;
+	border-radius: .15rem;
+	line-height: .98rem;
+	margin: 1.6rem auto 0;
+}
+
+.pwdbox {
+	margin: 0 .3rem;
+	padding-top: .4rem;
 }
