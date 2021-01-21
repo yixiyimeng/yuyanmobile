@@ -1,3 +1,12 @@
+.bgf8 {
+	background: #f8f8f8;
+}
+
+.imgbox img {
+	display: block;
+	width: 100%;
+}
+
 .rebackheader {
 	position: fixed;
 	height: .95rem;
@@ -9,6 +18,7 @@
 	text-align: center;
 	position: relative;
 	line-height: .95rem;
+	z-index: 999;
 }
 
 .rebackheader .reback {
@@ -31,6 +41,7 @@
 	background: #fff;
 	padding: 0 .3rem;
 	font-size: .28rem;
+	z-index: 999;
 }
 
 .header a {
@@ -54,4 +65,67 @@
 
 .header+div {
 	padding-top: .94rem;
+}
+
+.tabbarH {
+	height: 1.1rem;
+}
+
+.tabbar {
+	background: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1.1rem;
+	box-shadow: 0 -.01rem .1rem rgba(0, 0, 0, .1);
+}
+
+.tabbar a {
+	display: block;
+	text-align: center;
+	padding-top: .15rem;
+	color: #999;
+	font-size: .24rem;
+}
+
+.tabbar a.active {
+	color: #0166ad;
+}
+
+.tabbar a i {
+	display: block;
+	height: .44rem;
+	margin-bottom: .1rem;
+	background: url(../img/tabbar/home-cur.png) no-repeat center center;
+}
+
+.tabbar a i.icon1 {
+	background-size: .44rem auto;
+}
+
+.tabbar a i.icon2 {
+	background-image: url(../img/tabbar/network.png);
+	background-size: .46rem auto;
+}
+
+.tabbar a i.icon3 {
+	background-image: url(../img/tabbar/study.png);
+	background-size: .38rem auto;
+}
+
+.tabbar a i.icon4 {
+	background-image: url(../img/tabbar/mine.png);
+	background-size: .33rem auto;
+}
+
+.top {
+	height: .8rem;
+	width: .8rem;
+	display: block;
+	background: url(../img/top.png) no-repeat center center;
+	background-size: .8rem auto;
+	position: fixed;
+	bottom: 1.5rem;
+	right: .3rem;
 }
