@@ -2,6 +2,35 @@
 	background: #f8f8f8;
 }
 
+.bgfa {
+	background: #fafafa;
+}
+
+.text-grey {
+	color: #999;
+}
+
+.mt20 {
+	margin-top: .2rem;
+}.mt40{
+	margin-top: .4rem;
+}
+.mt80{
+	margin-top: .8rem;
+}
+
+.ft36 {
+	font-size: .36rem;
+}
+
+.ft30 {
+	font-size: .3rem;
+}
+
+.ft26 {
+	font-size: .26rem;
+}
+
 .imgbox img {
 	display: block;
 	width: 100%;
@@ -16,20 +45,39 @@
 	color: #222;
 	font-size: .34rem;
 	text-align: center;
-	position: relative;
 	line-height: .95rem;
 	z-index: 999;
+	background-color: #fff;
 }
 
-.rebackheader .reback {
+.rebackheader .reback,
+.rebackheader .search {
 	position: absolute;
-	height: .3rem;
+	height: .95rem;
 	width: .78rem;
 	background: url(../img/arrow.png) no-repeat center center;
 	background-size: .18rem auto;
-	left: 0;
+
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+.rebackheader .reback {
+	left: 0;
+}
+
+.rebackheader .search {
+	right: 0;
+	background-image: url(../img/search2.png);
+	background-size: .26rem auto;
+}
+
+.rebackheader.border {
+	border-bottom: 1px solid #eee;
+}
+
+.rebackheader~.main {
+	padding-top: .95rem;
 }
 
 .header {
@@ -97,11 +145,16 @@
 	display: block;
 	height: .44rem;
 	margin-bottom: .1rem;
-	background: url(../img/tabbar/home-cur.png) no-repeat center center;
+	background: url(../img/tabbar/home.png) no-repeat center center;
 }
 
 .tabbar a i.icon1 {
 	background-size: .44rem auto;
+}
+
+.tabbar a.active i.icon1 {
+	background-image: url(../img/tabbar/home-cur.png);
+
 }
 
 .tabbar a i.icon2 {
@@ -117,6 +170,10 @@
 .tabbar a i.icon4 {
 	background-image: url(../img/tabbar/mine.png);
 	background-size: .33rem auto;
+}
+
+.tabbar a.active i.icon4 {
+	background-image: url(../img/tabbar/mine-cur.png);
 }
 
 .top {
