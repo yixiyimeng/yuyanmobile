@@ -102,6 +102,7 @@ input[type='search'] {
 	-webkit-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
+	min-width:0;
 	/* overflow: hidden */
 }
 

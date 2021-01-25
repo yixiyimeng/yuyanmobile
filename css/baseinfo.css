@@ -169,38 +169,18 @@
 }
 
 .pagination {
-	text-align: center;
 	margin: .5rem 0 0;
 	padding-bottom: .7rem;
 }
 
 .pagination a,
 .pagination span {
-	text-align: center;
-	width: .6rem;
-	height: .6rem;
-	display: inline-block;
-	line-height: .6rem;
-	font-size: .24rem;
-	box-sizing: border-box;
-	color: #999;
 	border: 1px solid #cfcfcf;
-	vertical-align: middle;
 }
 
 .pagination a.active {
 	color: #2076b2;
 	border-color: #2076b2;
-}
-
-.pagination a.prev,
-.pagination a.next {
-	background: url(../img/arrow3.png) no-repeat center center;
-	background-size: .17rem auto;
-}
-
-.pagination a.prev {
-	transform: scale(-1, 1);
 }
 
 .searchbar {

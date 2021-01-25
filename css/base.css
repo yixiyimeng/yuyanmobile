@@ -12,10 +12,13 @@
 
 .mt20 {
 	margin-top: .2rem;
-}.mt40{
+}
+
+.mt40 {
 	margin-top: .4rem;
 }
-.mt80{
+
+.mt80 {
 	margin-top: .8rem;
 }
 
@@ -90,7 +93,7 @@
 	padding: 0 .3rem;
 	font-size: .28rem;
 	z-index: 999;
-	border-bottom:1px solid #eee;
+	border-bottom: 1px solid #eee;
 }
 
 .header a {
@@ -108,7 +111,7 @@
 
 .header a.menu.close {
 	background-image: url(../img/close.png);
-	
+
 }
 
 .header .logo,
@@ -133,6 +136,7 @@
 	right: 0;
 	height: 1.1rem;
 	box-shadow: 0 -.01rem .1rem rgba(0, 0, 0, .1);
+	z-index: 999;
 }
 
 .tabbar a {
@@ -191,6 +195,7 @@
 	position: fixed;
 	bottom: 1.5rem;
 	right: .3rem;
+	z-index: 9999
 }
 
 .menuView {
@@ -201,7 +206,7 @@
 	bottom: 0;
 	background: #fff;
 	z-index: 9999;
-	display:none;
+	display: none;
 }
 
 .menuView a {
@@ -229,4 +234,172 @@
 .menuView a.active {
 	color: #0266af;
 
+}
+
+.banner {
+	position: relative;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.banner .swiper-container img {
+	display: block;
+	width: 100%;
+}
+
+.banner .swiper-pagination {
+	bottom: .95rem;
+	left: 50%;
+	transform: translateX(-50%)
+}
+
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet {
+	background: #fff;
+	margin: 0 .1rem;
+}
+
+.banner .searchbar {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, .3);
+	padding: .09rem .3rem;
+	z-index: 999
+}
+
+.banner .searchbar>div {
+	background: #fff;
+	border-radius: .05rem;
+	border: 1px solid #eee;
+	height: .68rem;
+	padding: 0 .2rem;
+	font-size: .28rem;
+}
+
+.banner .searchbar>div img {
+	display: block;
+	width: .34rem;
+
+}
+
+.banner .searchbar>div .classify {
+	color: #333;
+	width: 1.7rem;
+	background: url(../img/arrow2.png) no-repeat 1.3rem center;
+	background-size: .16rem auto;
+}
+
+.banner .searchbar>div .line {
+	background: #eee;
+	width: 1px;
+	height: .38rem;
+}
+
+.banner .searchbar>div input {
+	border: none;
+	margin: 0 .25rem;
+
+}
+
+/* 分页 */
+.pagination {
+	text-align: center;
+	margin: .1rem 0 0;
+	padding-bottom: .55rem;
+}
+
+.pagination a,
+.pagination span {
+	text-align: center;
+	width: .6rem;
+	height: .6rem;
+	display: inline-block;
+	line-height: .6rem;
+	font-size: .24rem;
+	box-sizing: border-box;
+	color: #999;
+	vertical-align: middle;
+	border: 1px solid transparent;
+}
+
+.pagination a.active {
+	color: #e02627;
+	border-color: #e02627;
+}
+
+.pagination a.prev,
+.pagination a.next {
+	background: url(../img/arrow3.png) no-repeat center center;
+	background-size: .17rem auto;
+	border-color: #cfcfcf;
+}
+
+.pagination a.prev {
+	transform: scale(-1, 1);
+}
+
+/* 面包屑 */
+.breadcrumbs {
+	font-size: 13px;
+	color: #333;
+	padding: 0 .3rem;
+	line-height: .8rem
+}
+
+.breadcrumbs a {
+	color: #999;
+}
+
+/* 模块 */
+.modbox {
+	background: #fff;
+}
+
+.modbox .modbox-tab {
+	padding: .1rem .3rem 0;
+	font-size: .3rem;
+	color: #333;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.modbox .modbox-tab a,
+.modbox .modbox-tab span {
+	color: #333;
+	position: relative;
+	padding: .15rem 0 .2rem;
+	display: block;
+	margin-right:.2rem;
+	min-width: .7rem;
+	text-align: center;
+}
+
+.modbox .modbox-tab a.active,
+.modbox .modbox-tab a:hover {
+	color: #096db0;
+}
+
+.modbox .modbox-tab a.active::after {
+	content: '';
+	display: block;
+	height: 2px;
+	left: 0;
+	right: 0;
+	bottom: -1px;
+	background: #096db0;
+	position: absolute;
+
+}
+
+.modbox .modbox-tab+.modbox-tab {
+	padding-top: 0;
+}
+
+/* modbox tabPanel */
+.modbox .modbox-tabPanel {
+	display: none;
 }
