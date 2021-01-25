@@ -14,4 +14,9 @@ $(function() {
 			scrollTop: 0
 		}, 'slow');
 	});
+	/* 打开菜单 */
+	$('.menu').click(function(){
+		$(this).toggleClass('close');
+		$('.menuView').toggle()
+	})
 })

@@ -2,9 +2,26 @@
 	position: relative;
 }
 
-.banner>img {
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.banner .swiper-container img {
 	display: block;
 	width: 100%;
+}
+
+.banner .swiper-pagination {
+	bottom: .95rem;
+	left: 50%;
+	transform: translateX(-50%)
+}
+
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet {
+	background: #fff;
+	margin: 0 .1rem;
 }
 
 .banner .searchbar {
@@ -14,6 +31,7 @@
 	right: 0;
 	background: rgba(0, 0, 0, .3);
 	padding: .09rem .3rem;
+	z-index: 999
 }
 
 .banner .searchbar>div {
@@ -101,7 +119,8 @@
 .txtlist .txt-item {
 	color: #333;
 	font-size: .26rem;
-	padding: .15rem .2rem;
+	padding: 0 .2rem;
+	line-height:.74rem;
 	border-bottom: 1px solid #e1e1e1;
 	display: block;
 	position: relative;
