@@ -107,6 +107,12 @@ input[type='search'] {
 
 
 /*垂直对其方式*/
+.flex-align-start {
+	-webkit-box-align: flex-start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: flex-start;
+	align-items: flex-start;
+}
 
 .flex-align-center {
 	-webkit-box-align: center;
