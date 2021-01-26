@@ -147,6 +147,12 @@ input[type='search'] {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
+.flex-pack-end{
+	-webkit-box-pack: end;
+	-webkit-justify-content:end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
 .flex-wrap{
 	flex-wrap: wrap;
 }

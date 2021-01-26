@@ -1,3 +1,7 @@
+.swipe-delete-element {
+	touch-action: pan-y;
+}
+
 .baseInfo {
 	background: url(../img/bg.jpg) no-repeat top center;
 	background-size: 100% auto;
@@ -666,9 +670,11 @@
 	width: .38rem;
 	margin-right: .4rem;
 }
-.addrbookmodal .modal-ft{
+
+.addrbookmodal .modal-ft {
 	border-top: 1px solid #929292;
 }
+
 .addrbookmodal .modal-ft a {
 	display: block;
 	height: .88rem;
@@ -678,7 +684,8 @@
 	font-size: .3rem;
 	color: #333;
 }
-.addrbookmodal .modal-ft a+a{
+
+.addrbookmodal .modal-ft a+a {
 	color: #fff;
 	background: #c11d1e;
 }

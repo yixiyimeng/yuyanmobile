@@ -1,7 +1,3 @@
-* {
-	touch-action: pan-y;
-}
-
 .bgf8 {
 	background: #f8f8f8;
 }
@@ -39,7 +35,7 @@
 }
 
 .mt40 {
-	margin-top: .4rem;
+	margin-top: .4rem !important;
 }
 
 .mt80 {
@@ -385,7 +381,7 @@
 }
 
 .modbox .modbox-tab {
-	padding: .1rem .3rem 0;
+	padding: .15rem .3rem 0;
 	font-size: .3rem;
 	color: #333;
 	border-bottom: 1px solid #e5e5e5;
@@ -417,6 +413,27 @@
 	background: #096db0;
 	position: absolute;
 
+}
+
+.modbox .modbox-tab .scrollview {
+	overflow: scroll hidden;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+	position: relative;
+	-webkit-overflow-scrolling: touch;
+	max-height: inherit;
+}
+
+.cu-item {
+	height: 45px;
+	display: inline-block;
+	line-height: 45px;
+	margin: 0 5px;
+	padding: 0 10px;
+}
+
+.modbox .modbox-tab .scrollview a {
+	display: inline-block;
 }
 
 .modbox .modbox-tab+.modbox-tab {
