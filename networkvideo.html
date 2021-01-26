@@ -5,20 +5,14 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>网上课堂</title>
 		<link rel="stylesheet" type="text/css" href="css/Mreset.css" />
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<link rel="stylesheet" type="text/css" href="css/network.css" />
 
 	</head>
 	<body class="bgf8">
-		<div class="header flex flex-pack-justify flex-align-center">
-			<a href="index.html" class="logo">
-				<img src="img/logo.png">
-			</a>
-			<div class="flex flex-align-center">
-				<a href="login.html">登录</a>
-				<a href="javascript:;" class="menu"></a>
-			</div>
+		<div class="rebackheader border">
+			<a href="javascript:;" class="reback" onclick="history.go(-1)"></a>
+			<span>网上课堂</span>
 		</div>
 		<div class="menuView">
 			<a href="">首页</a>
@@ -76,7 +70,7 @@
 							<div class="text-grey">2020-12-07</div>
 						</div>
 						<div class="btnlist flex flex-pack-end">
-							<a href="javascript:;" class="btn-red">购买观看</a>
+							<a href="javascript:;" class="btn-red btn-buy">购买观看</a>
 							<a href="javascript:;" class="btn-blue">转发</a>
 						</div>
 					</div>
@@ -230,20 +224,49 @@
 			</a>
 		</div>
 		<a class="top" href="javascript:;" id="goToTop"></a>
+		<!-- 支付弹出框 -->
+		<div class="modal paymodal">
+			<div>
+				<div class="modal-hd">确定付款</div>
+				<div class="modal-bd">
+					<div class="money">￥19.00</div>
+					<div class="payway">
+						<div class="payway-item flex flex-align-center active">
+							<i class="icon icon-weixin"></i>
+							<div class="flex-1">微信支付</div>
+							<i class="check"></i>
+						</div>
+						<div class="payway-item flex flex-align-center">
+							<i class="icon icon-airpay"></i>
+							<div class="flex-1">支付宝支付</div>
+							<i class="check"></i>
+						</div>
+					</div>
+				</div>
+				<div class="modal-ft">
+					<a href="javascript:;">付款</a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
-<script type="text/javascript" src="js/swiper.min.js"></script>
 <script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	var swiper = new Swiper('.swiper-container', {
-		pagination: {
-			el: '.swiper-pagination',
-		},
+	//点击空白处隐藏弹出层，
+	$(document).click(function(event) {
+		var _con = $('.paymodal>div'); // 设置目标区域
+		if (!_con.is(event.target) && _con.has(event.target).length === 0) { // Mark 1
+			$('.paymodal').hide()
+		}
 	});
-	$('.cataloglist .item .item-hd').click(function() {
-		$(this).parent().toggleClass('open');
-		let txt = $(this).parent().hasClass('open') ? '收起' : '展开'
-		$(this).find('.arrow').text(txt)
+	/* 弹出支付弹框 */
+	$('.btn-buy').click(function(e) {
+		e.stopPropagation()
+		$('.paymodal').show()
+	});
+	/* 切换支付方式 */
+	$('.paymodal .payway-item').click(function(){
+		$(this).addClass('active').siblings().removeClass('active')
 	})
 </script>

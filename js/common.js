@@ -18,5 +18,16 @@ $(function() {
 	$('.menu').click(function(){
 		$(this).toggleClass('close');
 		$('.menuView').toggle()
+	});
+	/* tab切换 */
+	$('.modbox-tab a').click(function(e) {
+		if (!$(this).hasClass('active')) {
+			$(this).siblings('a.active').removeClass('active')
+			$(this).addClass('active');
+			let index = $(this).index();
+			let name = $(this).attr('name');
+			$('.modbox-tabPanel[name="' + name + '"]').eq(index).show().siblings().hide()
+			console.log($('.modbox-tabPanel[name="' + name + '"]').length)
+		}
 	})
 })

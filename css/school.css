@@ -1,0 +1,50 @@
+.newslist {
+	padding: .3rem .3rem .1rem;
+}
+
+.newslist .news-item,
+.newslist i {
+	width: 381px;
+	box-sizing: border-box;
+}
+
+.newslist .news-item {
+	padding: .15rem .15rem .3rem;
+	color: #666;
+	line-height: .44rem;
+	border: 1px solid #e6e6e6;
+	margin-bottom: .3rem;
+}
+
+.newslist .news-item .imgbox {
+	overflow: hidden;
+	border-radius: 0.05px;
+}
+
+.newslist .news-item .name {
+	font-size: .32rem;
+	margin: .4rem 0 .2rem;
+	color: #333;
+}
+
+.newsdetails {
+	padding: .4rem .3rem;
+	font-size: .24rem;
+	text-align: center;
+}
+
+.newsdetails .title {
+	font-size: .28rem;
+}
+
+.newsdetails .num {
+	font-size: .22rem;
+	color: #999;
+	margin: .2rem 0 .3rem;
+}
+
+.newsdetails p {
+	line-height: .52rem;
+	text-align: left;
+	text-indent: 2em;
+}

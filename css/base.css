@@ -1,3 +1,8 @@
+body {
+	color: #333;
+	font-size: .26rem;
+}
+
 .bgf8 {
 	background: #f8f8f8;
 }
@@ -26,6 +31,10 @@
 	text-align: right;
 }
 
+.ml10 {
+	margin-left: .1rem;
+}
+
 .ml20 {
 	margin-left: .2rem;
 }
@@ -52,6 +61,10 @@
 
 .ft26 {
 	font-size: .26rem;
+}
+
+.solids-bottom {
+	border-bottom: 1px solid #cdcdcd;
 }
 
 .imgbox img {
@@ -265,7 +278,8 @@
 	height: 100%;
 }
 
-.banner .swiper-container img {
+.banner img,
+.banner a {
 	display: block;
 	width: 100%;
 }
@@ -387,6 +401,10 @@
 	border-bottom: 1px solid #e5e5e5;
 }
 
+.modbox .modbox-tab.modbox-tab-lg {
+	padding-top: .3rem
+}
+
 .modbox .modbox-tab a,
 .modbox .modbox-tab span {
 	color: #333;
@@ -396,6 +414,11 @@
 	margin-right: .2rem;
 	min-width: .7rem;
 	text-align: center;
+}
+
+.modbox .modbox-tab.modbox-tab-lg a,
+.modbox .modbox-tab.modbox-tab-lg span {
+	margin-right: .45rem;
 }
 
 .modbox .modbox-tab a.active,
@@ -409,7 +432,7 @@
 	height: 2px;
 	left: 0;
 	right: 0;
-	bottom: -1px;
+	bottom: 0;
 	background: #096db0;
 	position: absolute;
 
@@ -443,4 +466,333 @@
 /* modbox tabPanel */
 .modbox .modbox-tabPanel {
 	display: none;
+}
+
+/* tab */
+.tab .tab-link {
+	background: #fff;
+	font-size: .26rem;
+	color: #333;
+	height: .82rem;
+	padding: 0 .3rem;
+
+
+}
+
+.tab .tab-link a {
+	position: relative;
+	line-height: .82rem;
+}
+
+.tab .tab-link i {
+	display: inline-block;
+	width: 4em;
+}
+
+.tab .tab-link a.active::after {
+	content: '';
+	display: block;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #2076b2;
+	height: .03rem;
+}
+
+/* 课程列表 */
+/* 课程列表 */
+.courselist {
+	padding: 0 .3rem;
+
+}
+
+.courselist .item {
+	padding: .35rem 0 .4rem;
+	border-bottom: 1px solid #e6e6e6;
+	color: #333;
+	font-size: .26rem;
+
+}
+
+.courselist .item img {
+	width: .29rem;
+	margin-right: .1rem;
+}
+
+.courselist .item .num {
+	width: .65rem;
+	text-align: center;
+
+}
+
+.courselist .item .flex-1 {
+	margin-right: .1rem;
+}
+
+.courselist .item .currentlen {
+	width: 30%;
+	text-align: left;
+}
+
+.courselist .item .btnlist {
+	margin-top: .3rem;
+}
+
+.courselist .item .btnlist a,
+.courselist .item .btnlist i {
+	width: 2rem;
+	display: block;
+	text-align: center;
+	margin-left: .1rem;
+}
+
+.courselist .item .btnlist a {
+	border: 1px solid #b2b2b2;
+	line-height: .5rem;
+	border-radius: .05rem;
+	color: #b2b2b2;
+	font-size: .26rem;
+}
+
+.courselist .item .btnlist a.btn-red {
+	color: #cb1f20;
+	border-color: #cb1f20;
+}
+
+.courselist .item .btnlist a.btn-blue {
+	color: #096bb4;
+	border-color: #096bb4;
+}
+
+/* 弹出框 */
+/* 弹出框 */
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .4);
+	z-index: 999;
+	display: none;
+}
+
+.modal>div {
+	background: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	border-top: 1px solid #e5e5e5;
+}
+
+.modal .close {
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	top: -32px;
+	right: -32px;
+	background: url(../img/close2.png);
+}
+
+.modal>div .modal-hd {
+	color: #333;
+	font-size: .3rem;
+	text-align: center;
+	line-height: .92rem;
+	background: #f7f7f7;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+/* 通讯录 */
+.addrbookmodal>div {
+	text-align: left;
+}
+
+
+.addrbookmodal .search {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 0 .3rem;
+}
+
+.addrbookmodal .search input {
+	margin: .2rem 0;
+	height: .76rem;
+	border: 1px solid #e5e5e5;
+	border-radius: 50px;
+	display: block;
+	width: 100%;
+	text-indent: .7rem;
+	line-height: .76rem;
+
+}
+
+.addrbookmodal .check {
+	font-size: 13px;
+}
+
+.addrbookmodal .check i,
+.addrbookmodal .check span {
+	vertical-align: middle;
+}
+
+.addrbookmodal .check i {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	background: url(../img/check.png) no-repeat center center;
+	background-size: contain;
+}
+
+.addrbookmodal .check.active i {
+	background-image: url(../img/curcheck.png);
+}
+
+.addrbookmodal .modal-bd {
+	max-height: 50vh;
+	overflow: hidden auto;
+	padding: 0 .3rem .2rem;
+	color: #333;
+}
+
+.addrbookmodal .modal-bd>ul>li>div {
+	font-size: 15px;
+	cursor: pointer;
+	position: relative;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+.addrbookmodal .modal-bd>ul>li>div::after {
+	content: '';
+	display: block;
+	background: url(../img/arrow6.png) no-repeat center center;
+	background-size: .26rem auto;
+	position: absolute;
+	left: 0;
+	height: .26rem;
+	width: .26rem;
+	transition: all .3s;
+	transform: rotate(-90deg);
+	transform-origin: 50% 50%;
+
+}
+
+.addrbookmodal .modal-bd>ul>li.open>div::after {
+	transform: rotate(0deg);
+	transform-origin: 50% 50%;
+}
+
+.addrbookmodal .modal-bd .stulist {
+	padding: .35rem 0 0;
+	display: none;
+}
+
+.addrbookmodal .modal-bd .open .stulist {
+	display: block;
+}
+
+.addrbookmodal .modal-bd .stulist li {
+	cursor: pointer;
+	padding-left: .4rem;
+	margin-bottom: .3rem;
+}
+
+.addrbookmodal .modal-bd .stulist img {
+	border-radius: 100%;
+	display: block;
+	width: .38rem;
+	margin-right: .4rem;
+}
+
+.addrbookmodal .modal-ft {
+	border-top: 1px solid #929292;
+}
+
+.addrbookmodal .modal-ft a {
+	display: block;
+	height: .88rem;
+	line-height: .88rem;
+	text-align: center;
+	background: #e6e6e6;
+	font-size: .3rem;
+	color: #333;
+}
+
+.addrbookmodal .modal-ft a+a {
+	color: #fff;
+	background: #c11d1e;
+}
+
+/* 支付弹出框 */
+.paymodal.modal>div {
+	border-top: 2px solid #e02627
+}
+
+.paymodal.modal>div .modal-hd {
+	font-size: .36rem;
+	background: #fff;
+
+}
+
+.paymodal.modal>div .modal-bd {
+	padding: 0 .3rem 0;
+}
+
+.paymodal.modal>div .money {
+	color: #e02627;
+	font-size: .7rem;
+	padding: 1rem 0
+}
+
+.paymodal.modal>div .payway .payway-item {
+	text-align: left;
+	font-size: .3rem;
+	margin-bottom: .4rem;
+}
+
+.paymodal.modal>div .payway .payway-item i {
+	width: .4rem;
+	height: .4rem;
+	display: block;
+}
+
+.paymodal.modal>div .payway .payway-item i.icon {
+	margin-right: .13rem;
+	background: url(../img/weixinpay.png) no-repeat center center;
+	background-size: 100% auto;
+}
+
+.paymodal.modal>div .payway .payway-item i.icon-airpay {
+	background-image: url(../img/airpay.png);
+}
+
+.paymodal.modal>div .payway .payway-item i.check {
+	border: 1px solid #cdcdcd;
+	border-radius: 100%;
+	position: relative;
+}
+
+.paymodal.modal>div .payway .payway-item.active i.check::after {
+	position: absolute;
+	content: '';
+	height: .2rem;
+	width: .2rem;
+	border-radius: 100%;
+	display: block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #e02627;
+}
+
+.paymodal.modal>div .modal-ft a {
+	display: block;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	color: #fff;
+	background-color: #e02627;
+	font-size: .34rem;
 }

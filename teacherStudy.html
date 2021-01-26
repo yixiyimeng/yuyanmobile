@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>备课中心</title>
+		<link rel="stylesheet" type="text/css" href="css/Mreset.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/baseinfo.css" />
+	</head>
+	<body class="bgf8">
+		<div class="rebackheader border">
+			<a href="javascript:;" class="reback" onclick="history.go(-1)"></a>
+			<span>备课中心</span>
+			<a href="javascript:;" class="search"></a>
+		</div>
+		<div class="searchbar">
+			<div class="group">
+				<input type="text" id="" value="六年级英语冲刺" placeholder="" />
+			</div>
+			<div class="btnlist flex flex-align-center flex-pack-justify">
+				<a href="javascript:;" class="flex-1">取消</a>
+				<a href="javascript:;" class="flex-1">确认</a>
+			</div>
+		</div>
+		<div class="main">
+			<div class="study-hd flex flex-align-center">
+				<span class="num">序号</span>
+				<span class="flex-1">名称</span>
+				<span>时间</span>
+				<span>状态</span>
+			</div>
+			<ul class="studylist">
+				<li class="study-item swipe-delete-element">
+					<a href="" class="con flex flex-align-center">
+						<div class="num">1</div>
+						<div class="name ellipsis flex-1">老师讲的很好，很有耐心，详细的给大家分解</div>
+						<div class="time">2020.12.11</div>
+						<div class="state text-green">审核通过</div>
+					</a>
+					<div class="swipe-delete-btn btn flex flex-align-center flex-pack-center">删除</div>
+				</li>
+				<li class="study-item swipe-delete-element">
+					<a href="" class="con flex flex-align-center">
+						<div class="num">2</div>
+						<div class="name ellipsis flex-1">老师讲的很好，很有耐心，详细的给大家分解</div>
+						<div class="time">2020.12.11</div>
+						<div class="state text-red">审核中</div>
+					</a>
+					<div class="swipe-delete-btn btn flex flex-align-center flex-pack-center">删除</div>
+				</li>
+				<li class="study-item swipe-delete-element">
+					<a href="" class="con flex flex-align-center">
+						<div class="num">3</div>
+						<div class="name ellipsis flex-1">老师讲的很好，很有耐心，详细的给大家分解</div>
+						<div class="time">2020.12.11</div>
+						<div class="state text-red">审核中</div>
+					</a>
+					<div class="swipe-delete-btn btn flex flex-align-center flex-pack-center">删除</div>
+				</li>
+				<li class="study-item swipe-delete-element">
+					<a href="" class="con flex flex-align-center">
+						<div class="num">4</div>
+						<div class="name ellipsis flex-1">老师讲的很好，很有耐心，详细的给大家分解</div>
+						<div class="time">2020.12.11</div>
+						<div class="state text-red">审核中</div>
+					</a>
+					<div class="swipe-delete-btn btn flex flex-align-center flex-pack-center">删除</div>
+				</li>
+				<li class="study-item swipe-delete-element">
+					<a href="" class="con flex flex-align-center">
+						<div class="num">5</div>
+						<div class="name ellipsis flex-1">老师讲的很好，很有耐心，详细的给大家分解</div>
+						<div class="time">2020.12.11</div>
+						<div class="state text-red">审核中</div>
+					</a>
+					<div class="swipe-delete-btn btn flex flex-align-center flex-pack-center">删除</div>
+				</li>
+			</ul>
+			<!-- 分页 -->
+			<div class="pagination">
+				<a href="javascript:;" class="prev"></a>
+				<a href="javascript:;" class="active">1</a>
+				<a href="javascript:;">2</a>
+				<a href="javascript:;">3</a>
+				<a href="javascript:;">4</a>
+				<a href="javascript:;" class="next"></a>
+			</div>
+		</div>
+
+	</body>
+</html>
+<script src="js/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swipeDelete.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('.rebackheader .search').click(function() {
+		$('.searchbar').toggle()
+	});
+	$('.searchbar a').eq(0).click(function() {
+		$('.searchbar').hide()
+	});
+	$('.swipe-delete-element').each(function(index, item) {
+		var swipedeletecontent = $(this)[0];
+		swipeDelete(swipedeletecontent, {
+			direction: 'left',
+			distance: 60, //滑动距离
+			deleteFn: function(e) {
+				alert(this.innerHTML)
+				console.log(e.target);
+			}
+		})
+	})
+</script>

@@ -1,0 +1,67 @@
+.teacherlist {
+	padding: .3rem;
+}
+
+.teacherlist .teacher-item {
+	padding: .1rem;
+	border: 1px solid #e6e6e6;
+	color: #999;
+	font-size: .22rem;
+	line-height: .34rem;
+	margin-bottom: .27rem;
+}
+
+.teacherlist .teacher-item .imgbox {
+	border-radius: .05rem;
+	overflow: hidden;
+	margin-right: .25rem;
+	width: 1.9rem;
+}
+
+.teacherlist .teacher-item .name {
+	color: #0166ad;
+	font-size: .28rem;
+}
+
+.teacherlist .teacher-item .info {
+	color: #666;
+	padding-top: .1rem;
+	border-top: 1px solid #e6e6e6;
+	margin-top: .2rem;
+}
+
+.teacher-baseinfo {
+	padding: .4rem .3rem .56rem;
+	font-size: .22rem;
+}
+
+.teacher-baseinfo .imgbox {
+	width: 1.8rem;
+	overflow: hidden;
+	border-radius: 0.05rem;
+	margin: 0 auto;
+}
+
+.teacher-baseinfo .name {
+	font-size: .34rem;
+	font-weight: bold;
+	margin-bottom: .15rem;
+	margin-top: .4rem;
+}
+
+.teacher-baseinfo .des {
+	margin-top: .3rem;
+	line-height: .46rem;
+	font-size: .24rem;
+}
+
+/* 教师详情 */
+.teacherinfo {
+	font-size: .24rem;
+	line-height: .52rem;
+	padding: .35rem .3rem;
+	display: block;
+}
+.teacherinfo p{
+	text-indent: 2em;
+}

@@ -211,69 +211,7 @@
 	color: #333
 }
 
-/* 课程列表 */
-.courselist {
-	padding: 0 .3rem;
 
-}
-
-.courselist .item {
-	padding: .35rem 0 .4rem;
-	border-bottom: 1px solid #e6e6e6;
-	color: #333;
-	font-size: .26rem;
-
-}
-
-.courselist .item img {
-	width: .29rem;
-	margin-right: .1rem;
-}
-
-.courselist .item .num {
-	width: .65rem;
-	text-align: center;
-
-}
-
-.courselist .item .flex-1 {
-	margin-right: .1rem;
-}
-
-.courselist .item .currentlen {
-	width: 30%;
-	text-align: left;
-}
-
-.courselist .item .btnlist {
-	margin-top: .3rem;
-}
-
-.courselist .item .btnlist a,
-.courselist .item .btnlist i {
-	width: 2rem;
-	display: block;
-	text-align: center;
-	margin-left: .1rem;
-}
-
-.courselist .item .btnlist a {
-	border: 1px solid #b2b2b2;
-	line-height: .5rem;
-	border-radius: .05rem;
-	color: #b2b2b2;
-	font-size: .26rem;
-}
-
-.courselist .item .btnlist a.btn-red {
-	color: #cb1f20;
-	border-color: #cb1f20;
-}
-
-.courselist .item .btnlist a.btn-blue {
-	color: #096bb4;
-	border-color: #096bb4;
-}
 
 /* 视频详情 */
 .videobox {

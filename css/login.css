@@ -116,7 +116,7 @@
 
 .successInfo {
 	text-align: center;
-	padding-top: 1.7rem;
+	padding-top: 2.65rem;
 }
 
 .successInfo img {
@@ -130,6 +130,10 @@
 	font-size: .4rem;
 	font-weight: bold;
 	margin: .7rem 0 .35rem;
+}
+
+.red-successInfo.successInfo .tip {
+	color: #e02627;
 }
 
 .successInfo .tip+div {
@@ -149,6 +153,21 @@
 	margin: 1.6rem auto 0;
 }
 
+.red-successInfo.successInfo .reback {
+	color: #e02627;
+	border-color: #e02627;
+}
+.red-successInfo.successInfo .btnlinks{
+	margin-top: .3rem;
+}
+.red-successInfo.successInfo .btnlinks,
+.red-successInfo.successInfo .btnlinks a {
+	color: #1877b9;
+	font-size: .3rem;
+}
+.red-successInfo.successInfo .btnlinks .line{
+	margin: 0 .75rem;
+}
 .pwdbox {
 	margin-left: .3rem;
 	margin-right: .3rem;
