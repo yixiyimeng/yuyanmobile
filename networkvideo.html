@@ -14,17 +14,9 @@
 			<a href="javascript:;" class="reback" onclick="history.go(-1)"></a>
 			<span>网上课堂</span>
 		</div>
-		<div class="menuView">
-			<a href="">首页</a>
-			<a href="" class="active">网上课堂</a>
-			<a href="">名师风采</a>
-			<a href="">学习园地</a>
-			<a href="">走进玉岩</a>
-		</div>
 		<div class="main">
-			<div class="breadcrumbs"><a href="">首页</a> <span>></span> <a href="">公开课</a> <span>></span> <span>经典题精精讲</span></div>
-
-			<div class="modbox">
+			<div class="breadcrumbs bgfff"><a href="">首页</a> <span>></span> <a href="">公开课</a> <span>></span> <span>经典题精精讲</span></div>
+			<div class="modbox mt20">
 				<div class="modbox-tab flex">
 					<span>序号</span>
 					<div class="flex-1 ">
@@ -266,7 +258,7 @@
 		$('.paymodal').show()
 	});
 	/* 切换支付方式 */
-	$('.paymodal .payway-item').click(function(){
+	$('.paymodal .payway-item').click(function() {
 		$(this).addClass('active').siblings().removeClass('active')
 	})
 </script>

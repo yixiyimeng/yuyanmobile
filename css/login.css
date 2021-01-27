@@ -9,12 +9,12 @@
 	margin-bottom: .9rem;
 }
 
-.tab .tab-link {
+.login-tab .tab-link {
 	border-bottom: 1px solid #e6e6e6;
 	padding: 0 .3rem;
 }
 
-.tab .tab-link a {
+.login-tab .tab-link a {
 	text-align: center;
 	height: 1rem;
 	line-height: 1rem;
@@ -24,7 +24,7 @@
 	font-size: .46rem;
 }
 
-.tab .tab-link a.active {
+.login-tab .tab-link a.active {
 	border: 1px solid #e6e6e6;
 	border-bottom: none;
 	background: #fff;
@@ -32,7 +32,7 @@
 	position: relative;
 }
 
-.tab .tab-link a.active::before {
+.login-tab .tab-link a.active::before {
 	content: '';
 	display: block;
 	height: 1px;
@@ -43,13 +43,13 @@
 	bottom: -1px;
 }
 
-.tab .tab-panel {
+.login-tab .tab-panel {
 	margin: .7rem .3rem;
 	padding-bottom: .1rem;
 }
 
 
-.tab .tab-panel .changeWay {
+.login-tab .tab-panel .changeWay {
 	text-align: center;
 	margin: .4rem auto;
 	display: block;
@@ -132,6 +132,10 @@
 	margin: .7rem 0 .35rem;
 }
 
+.code-group {
+	display: none;
+}
+
 .red-successInfo.successInfo .tip {
 	color: #e02627;
 }
@@ -157,17 +161,21 @@
 	color: #e02627;
 	border-color: #e02627;
 }
-.red-successInfo.successInfo .btnlinks{
+
+.red-successInfo.successInfo .btnlinks {
 	margin-top: .3rem;
 }
+
 .red-successInfo.successInfo .btnlinks,
 .red-successInfo.successInfo .btnlinks a {
 	color: #1877b9;
 	font-size: .3rem;
 }
-.red-successInfo.successInfo .btnlinks .line{
+
+.red-successInfo.successInfo .btnlinks .line {
 	margin: 0 .75rem;
 }
+
 .pwdbox {
 	margin-left: .3rem;
 	margin-right: .3rem;

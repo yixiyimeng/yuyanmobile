@@ -10,7 +10,9 @@ body {
 .bgfa {
 	background: #fafafa;
 }
-
+.bgfff{
+	background: #fff;
+}
 .text-black {
 	color: #333;
 }
